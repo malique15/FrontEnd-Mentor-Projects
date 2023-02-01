@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
 
 * {
     margin: 0;
@@ -6,54 +6,151 @@
     box-sizing: border-box;
 }
 
-a {
-    text-decoration: none;
-    color: hsl(228, 45%, 44%);
-    background-color: white;
-    border: 1px solid white;
-    padding: 15px 50px;
-    border-radius: 40px;
-    font-family: 'Poppins';
-    box-shadow: 0 3px 10px rgb(0 0 0 / 50%);
-    ;
-}
-
 body {
     background-image: url(images/bg-desktop.svg);
-    background-size: 99%;
+    background-size: cover;
+    background-repeat: no-repeat;
     background-color: hsl(228, 45%, 44%);
-    padding: 30px 0px;
-
+    width: 100%;
+    height: 100vh;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .container {
-    max-width: 90%;
-    margin: auto;
+    padding: 3em;
 }
 
 .logo {
-    width: 200px;
     margin-bottom: 50px;
 }
 
 .logo img {
-    width: 100%;
+    width: 15em;
 }
 
-header {
+.main-content {
     display: flex;
+    flex-direction: row;
+    gap: 3em;
 }
 
 .hero-image-section {
+    flex: 1;
+}
+
+.hero-text-section {
+    padding: 2rem 0;
+    flex: 1;
+    color: white;
+}
+
+.hero-text-section h1 {
+    font-size: 2.5rem;
+    letter-spacing: .02em;
+    margin-bottom: .75em;
+    text-transform: capitalize;
+    font-weight: 600;
+}
+
+.hero-text-section p {
+    margin-bottom: 4rem;
+
+
+    font-size: 1em;
+    letter-spacing: .03em;
+    line-height: 1.5em;
+    font-weight: 100;
+
+    font-weight: 400;
+}
+
+.hero-text-section a {
+    text-decoration: none;
+    color: hsl(228, 45%, 44%);
+    background-color: white;
+    border: 0;
+    padding: 22px 80px;
+    border-radius: 40px;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 50%);
+    font-weight: 600;
+}
+
+.social-links {
+    display: flex;
+    justify-content: right;
+    padding-bottom: 2em;
+}
+
+.social-links i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid hsl(0, 0%, 100%);
+    border-radius: 50%;
+    width: 2.25em;
+    height: 2.25em;
+    font-size: 1.15em;
+    margin: 0 .5em;
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Previous Css */
+
+/* 
+.hero-image-section {
     margin-right: 55px;
-    flex: 2;
+    width: 60%;
 }
 
 .hero-image {
-    width: 630px;
+    width: 100%;
 }
 
 .heading-text-section {
+    width: 40%;
     flex: 1;
 
 }
@@ -85,4 +182,4 @@ i {
     padding: 0px 10px;
     font-size: 30px;
     color: white;
-}
+} */
