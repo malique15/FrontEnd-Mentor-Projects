@@ -1,3 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&display=swap');
+
+
 * {
     padding: 0%;
     margin: 0%;
@@ -12,58 +17,161 @@ body {
 
 }
 
-img {
+.mobile-image {
+    display: block;
     width: 100%;
+    border-radius: inherit;
+}
+
+.desktop-image {
+    display: none;
 }
 
 main {
     width: 95%;
     margin: auto;
-    background-color: aqua;
-    border-radius: 5%;
+    background-color: white;
+    border-radius: 1.5em;
+    overflow: hidden;
 }
 
 .content-section {
     padding: 5%;
-
 }
 
 .content-section h1 {
     font-size: 3em;
+    font-family: 'Fraunces';
+    margin-bottom: .5em;
 }
 
 .content-section p {
     font-size: 1.2em;
+    margin-bottom: .5em;
+}
+
+.tag,
+.product-description,
+.price-old {
+    opacity: 70%;
+}
+
+.content-section .tag {
+    font-family: 'Montserrat';
+    font-weight: 500;
+    letter-spacing: .5em;
+}
+
+.content-section .product-description {
+    margin-bottom: 1em;
+    font-size: 1.8em;
+    line-height: 1.5em;
 }
 
 .content-section .pricing-section {
     display: flex;
     flex-direction: row;
     gap: 1.2em;
+    margin-bottom: 1.2em;
+    line-height: 100%
 }
 
 .content-section .pricing-section .price-new {
-    font-size: 2em;
+    font-size: 3em;
+    font-family: 'Fraunces';
+    color: hsl(158, 36%, 37%);
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.content-section .pricing-section .price-old {
+    font-size: 1.2em;
+    font-family: 'Montserrat';
+    display: inline-block;
+    vertical-align: middle;
 }
 
 .content-section .add-to-cart-section img {
     display: inline-block;
-    width: auto;
+    width: 1.2em;
+    margin-right: 1.5em;
 }
 
 .content-section .add-to-cart-section button {
-    display: flex;
     font-size: 1em;
     border: 0;
     background-color: hsl(158, 36%, 37%);
     color: white;
     font-weight: bold;
-    padding: 3% 40%;
     border-radius: .5em;
-    text-align: center;
+    width: 100%;
+    padding: 4% 0%;
 }
 
 
+@media (min-width: 768px) {
+
+    body {
+        margin: auto;
+        padding: 0%;
+        display: flex;
+
+        justify-content: center;
+        align-items: center;
+    }
+
+    main {
+        width: 55%;
+        margin: auto;
+        display: flex;
+        border-radius: 1em;
+        padding: 0%;
+    }
+
+    .mobile-image {
+        display: none;
+    }
+
+    .image-section .desktop-image {
+        display: block;
+        object-fit: cover;
+        width: 100%;
+    }
+
+    .image-section,
+    .content-section {
+        flex: 1;
+    }
+
+    .content-section h1 {
+        font-size: 2.5em;
+    }
+
+    .content-section .tag {
+        font-size: .8em;
+        margin-bottom: 1.2em;
+    }
+
+    .content-section .product-description {
+        font-size: 1.3em;
+    }
+
+    .pricing-section {
+        margin-top: 1.8em;
+    }
+
+    .add-to-cart-section {
+        margin-top: 2em;
+    }
+
+    .content-section .pricing-section .price-new {
+        font-size: 2.5em;
+    }
+
+    .content-section .pricing-section .price-old {
+        font-size: .9em;
+    }
+}
 
 /* 
 what left more design
@@ -78,7 +186,5 @@ background color change
 
 
 Design desktop view
-
-
 
 */
